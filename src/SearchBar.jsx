@@ -1,6 +1,5 @@
 import RecipeList from "../RecipeList";
-import FavoritesList from "../FavoritesList";
-import RecommendationsList from "../RecommendationsList";
+import SearchBar from "../SearchBar";
 import { Link } from "react-router-dom";
 
 export default function RecipeListPage() {
@@ -8,11 +7,9 @@ export default function RecipeListPage() {
     <div>
       <h1>Recipes</h1>
 
+      <SearchBar />
+
       <RecipeList />
-
-      <FavoritesList />
-
-      <RecommendationsList />
 
       <Link to="/add">
         <button>Add Recipe</button>
